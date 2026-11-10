@@ -10,8 +10,8 @@ button{font:inherit}
 .stars:after,.interlude-stars:after{background-size:430px 360px,300px 250px,520px 400px;opacity:.3;animation:starDriftB 42s linear infinite reverse,starTwinkle 5.2s ease-in-out infinite alternate-reverse}
 .snowfall{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:2;opacity:.7}
 .snowflake{position:absolute;top:-8vh;color:rgba(235,247,255,.82);font-family:Georgia,serif;font-size:var(--size);text-shadow:0 0 7px rgba(185,225,255,.55);animation:fall var(--duration) linear var(--delay) infinite, snowSway var(--sway) ease-in-out var(--delay) infinite alternate}
-.envelope-screen{min-height:100vh;display:grid;place-items:center;align-content:center;gap:24px;position:relative;z-index:10;padding:30px;background:radial-gradient(circle at 50% 40%,rgba(67,81,155,.16),transparent 42%);transition:opacity 1.2s,transform 1.2s}
-.envelope-screen.hide{opacity:0;transform:scale(1.04);pointer-events:none}
+.envelope-screen{min-height:100vh;display:grid;place-items:center;align-content:center;gap:24px;position:relative;z-index:10;padding:30px;background:radial-gradient(circle at 50% 40%,rgba(67,81,155,.16),transparent 42%);transition:opacity 1.8s ease,transform 1.8s cubic-bezier(.22,.61,.36,1),filter 1.8s ease}
+.envelope-screen.hide{opacity:0;transform:scale(1.045);filter:blur(7px);pointer-events:none}
 .envelope-wrap{cursor:pointer;perspective:1200px}
 .envelope{width:min(430px,82vw);aspect-ratio:1.55/1;position:relative;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45));transition:transform .7s}
 .envelope-wrap:hover .envelope{transform:translateY(-8px) rotateX(2deg)}
@@ -24,10 +24,10 @@ button{font:inherit}
 .envelope-wrap.open .wax{transform:translate(-50%,-50%) scale(1.18) rotate(-7deg);opacity:0}
 .hint{margin:0;text-transform:uppercase;letter-spacing:.34em;font-size:11px;opacity:.65}
 .open-link{border:0;background:transparent;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:11px;cursor:pointer;padding:10px 16px}
-.letter-screen,.second-letter{min-height:170vh;position:relative;display:flex;justify-content:center;opacity:0;pointer-events:none;transition:opacity 1.2s}
-.letter-screen.visible,.second-letter.visible{opacity:1;pointer-events:auto}
-.scene{position:absolute;inset:0;background:linear-gradient(rgba(4,8,25,.3),rgba(4,7,20,.58)),url('assets/scene.svg') center/cover no-repeat;filter:blur(14px) saturate(.85);transform:scale(1.08);transition:filter 3s}
-.letter-screen.visible .scene,.second-letter.visible .scene{filter:blur(2px) saturate(.95)}
+.letter-screen,.second-letter{min-height:170vh;position:relative;display:flex;justify-content:center;opacity:0;pointer-events:none;transform:translateY(18px) scale(1.015);filter:blur(7px);transition:opacity 2.2s ease,transform 2.4s cubic-bezier(.22,.61,.36,1),filter 2.4s ease}
+.letter-screen.visible,.second-letter.visible{opacity:1;pointer-events:auto;transform:translateY(0) scale(1);filter:blur(0)}
+.scene{position:absolute;inset:0;background:linear-gradient(rgba(4,8,25,.3),rgba(4,7,20,.58)),url('assets/scene.svg') center/cover no-repeat;filter:blur(16px) saturate(.78);transform:scale(1.1);opacity:.72;transition:filter 5.5s ease,transform 5.5s cubic-bezier(.22,.61,.36,1),opacity 4s ease}
+.letter-screen.visible .scene,.second-letter.visible .scene{filter:blur(2px) saturate(.95);transform:scale(1.04);opacity:1}
 .scene-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,6,19,.5),rgba(3,5,14,.25) 40%,rgba(3,5,14,.82))}
 .letter-content{position:relative;z-index:4;width:min(760px,90vw);padding:18vh 0 20vh;text-align:center}
 .letter-label{text-transform:uppercase;letter-spacing:.4em;font-size:10px;color:rgba(255,255,255,.62);margin-bottom:46px}
