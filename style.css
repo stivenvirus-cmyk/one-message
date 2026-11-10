@@ -55,3 +55,19 @@ button{font:inherit}
 .close-video{position:fixed;right:24px;top:18px;border:0;background:transparent;color:#fff;font-size:38px;cursor:pointer;opacity:.7}
 @keyframes blink{50%{opacity:0}}@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}@keyframes starfield{0%{transform:translate3d(-10px,4px,0) scale(1);opacity:.5}50%{opacity:.78}100%{transform:translate3d(14px,-10px,0) scale(1.03);opacity:.62}}@keyframes starDriftA{from{transform:translate3d(-2vw,1vh,0)}to{transform:translate3d(3vw,-2vh,0)}}@keyframes starDriftB{from{transform:translate3d(2vw,-1vh,0) scale(1)}to{transform:translate3d(-3vw,2vh,0) scale(1.04)}}@keyframes starGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(175,220,255,0));}50%{filter:drop-shadow(0 0 8px rgba(175,220,255,.38));}}@keyframes starTwinkle{0%{opacity:.22}45%{opacity:.72}100%{opacity:.34}}@keyframes fall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}8%{opacity:.8}92%{opacity:.72}100%{transform:translate3d(var(--drift),110vh,0) rotate(220deg);opacity:0}}@keyframes snowSway{from{margin-left:-9px}to{margin-left:9px}}@keyframes starPulse{0%,100%{filter:drop-shadow(0 0 0 rgba(190,225,255,0));opacity:.55}50%{filter:drop-shadow(0 0 7px rgba(190,225,255,.85));opacity:1}}
 @media(max-width:600px){.envelope{width:88vw}.wax{width:76px;height:76px}.letter-content{padding-top:15vh}.letter-text{font-size:29px;line-height:1.4}.letter-screen,.second-letter{min-height:190vh}}
+.wax{transform:translate(-50%,-50%) scale(1);transition:transform .65s cubic-bezier(.22,.61,.36,1),opacity .5s ease;will-change:transform,opacity}
+.wax.crack{animation:waxCrack .72s cubic-bezier(.2,.8,.2,1) forwards}
+.wax.crack:before,.wax.crack:after,.wax i,.wax b{content:'';position:absolute;pointer-events:none;opacity:0}
+.wax.crack:before{width:3px;height:58px;left:48%;top:12%;background:rgba(36,5,10,.85);transform:rotate(17deg);opacity:1;box-shadow:11px 14px 0 -1px rgba(36,5,10,.55)}
+.wax.crack:after{width:2px;height:43px;left:57%;top:42%;background:rgba(36,5,10,.75);transform:rotate(-24deg);opacity:1}
+.wax.crack i{display:block;width:18px;height:3px;background:rgba(36,5,10,.72);left:29%;top:54%;transform:rotate(24deg);opacity:1}
+.wax.crack b{display:block;width:13px;height:3px;background:rgba(36,5,10,.65);left:61%;top:29%;transform:rotate(-38deg);opacity:1}
+@keyframes waxCrack{
+  0%{transform:translate(-50%,-50%) scale(1) rotate(0);opacity:1}
+  28%{transform:translate(-50%,-50%) scale(1.06) rotate(-2deg);opacity:1}
+  48%{transform:translate(-50%,-50%) scale(.98) rotate(2deg);opacity:1}
+  68%{transform:translate(-50%,-50%) scale(1.13) rotate(-5deg);opacity:.95}
+  100%{transform:translate(-50%,-50%) scale(1.28) rotate(-8deg);opacity:0}
+}
+.envelope-wrap.open .envelope-flap{transition-delay:.65s}
+.envelope-screen.hide{transition-delay:.45s}
