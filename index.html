@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050712">
+  <title>One Message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="story">
+  <div class="stars"></div>
+
+  <section class="envelope-screen" id="envelopeScreen">
+    <div class="envelope-wrap" id="envelope" tabindex="0" role="button" aria-label="Открыть письмо">
+      <div class="envelope">
+        <div class="envelope-paper"></div>
+        <div class="envelope-flap"></div>
+        <div class="wax"><span>ВА</span></div>
+      </div>
+    </div>
+    <p class="hint">для тебя</p>
+    <button class="open-link" id="openLink">открыть письмо</button>
+  </section>
+
+  <section class="letter-screen" id="letterScreen" aria-hidden="true">
+    <div class="scene"></div><div class="scene-overlay"></div>
+    <div class="letter-content">
+      <div class="letter-label">одно письмо</div>
+      <div class="letter-text" id="letterText"></div>
+      <div class="continue-marker" id="continueMarker">↓</div>
+    </div>
+  </section>
+
+  <section class="interlude" id="interlude" aria-hidden="true">
+    <div class="interlude-stars"></div>
+    <div class="interlude-title"><span>Но это</span><span>ещё не конец</span></div>
+  </section>
+
+  <section class="second-letter" id="secondLetter" aria-hidden="true">
+    <div class="scene"></div><div class="scene-overlay"></div>
+    <div class="letter-content">
+      <div class="letter-label">продолжение</div>
+      <div class="letter-text" id="secondText"></div>
+      <div class="unlock-area" id="unlockArea">
+        <div class="unlock-caption">ты дошла до конца письма</div>
+        <button class="video-button" id="videoButton" disabled>🔒 видео пока закрыто</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-screen" id="videoScreen" aria-hidden="true">
+    <button class="close-video" id="closeVideo" aria-label="Закрыть видео">×</button>
+    <div class="video-placeholder">
+      <div class="video-icon">▶</div>
+      <h2>Здесь появится видео</h2>
+      <p>Файл добавим после утверждения механики.</p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
