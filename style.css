@@ -1,7 +1,8 @@
+@font-face{font-family:'Gnocchi';src:url('ofont.ru_Gnocchi.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 :root{--night:#050712;--gold:#d8b77b}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--night);color:#fff;font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden}
+body{margin:0;background:var(--night);color:#fff;font-family:'Gnocchi','Cormorant Garamond',Georgia,serif;overflow-x:hidden}
 button{font:inherit}
 .story{min-height:100vh;position:relative;background:#050712}
 .stars,.interlude-stars{position:fixed;inset:0;pointer-events:none;overflow:hidden;opacity:.7;z-index:1;background-image:radial-gradient(circle at 8% 18%,rgba(255,255,255,.9) 0 1px,transparent 2px),radial-gradient(circle at 24% 72%,rgba(196,225,255,.8) 0 1.5px,transparent 3px),radial-gradient(circle at 42% 31%,rgba(255,255,255,.75) 0 1px,transparent 2px),radial-gradient(circle at 61% 17%,rgba(175,220,255,.85) 0 1.5px,transparent 3px),radial-gradient(circle at 79% 63%,rgba(255,255,255,.85) 0 1px,transparent 2px),radial-gradient(circle at 92% 29%,rgba(190,225,255,.8) 0 1.5px,transparent 3px);background-size:210px 180px,290px 240px,330px 260px,260px 210px,360px 300px,310px 250px;animation:starfield 24s linear infinite alternate;mix-blend-mode:screen}
@@ -26,14 +27,14 @@ button{font:inherit}
 .scene-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,6,19,.5),rgba(3,5,14,.25) 40%,rgba(3,5,14,.82))}
 .letter-content{position:relative;z-index:4;width:min(760px,90vw);padding:18vh 0 20vh;text-align:center}
 .letter-label{text-transform:uppercase;letter-spacing:.4em;font-size:10px;color:rgba(255,255,255,.62);margin-bottom:46px}
-.letter-text{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(29px,4.2vw,46px);font-weight:500;letter-spacing:.015em;line-height:1.42;text-shadow:0 3px 24px rgba(0,0,0,.72);min-height:7em;white-space:pre-wrap}
+.letter-text{font-family:'Gnocchi','Cormorant Garamond',Georgia,serif;font-size:clamp(29px,4.2vw,46px);font-weight:500;letter-spacing:.015em;line-height:1.42;text-shadow:0 3px 24px rgba(0,0,0,.72);min-height:7em;white-space:pre-wrap}
 .letter-text:after{content:'▋';animation:blink .8s step-end infinite;color:var(--gold);margin-left:2px}
 .letter-text.done:after{display:none}
 .continue-marker{opacity:0;margin-top:70px;font-size:26px;color:var(--gold);animation:bounce 1.8s infinite;transition:opacity 1s}
 .continue-marker.show{opacity:.8}
 .interlude{min-height:100vh;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,#10183b 0,#050712 62%);opacity:0;pointer-events:none;transition:opacity 1.2s}
 .interlude.visible{opacity:1}
-.interlude-title{position:relative;z-index:4;display:flex;flex-direction:column;gap:6px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,72px);font-weight:500;opacity:0;transform:translateY(20px);transition:opacity 1.4s,transform 1.4s}
+.interlude-title{position:relative;z-index:4;display:flex;font-family:'Gnocchi','Cormorant Garamond',Georgia,serif;flex-direction:column;gap:6px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,72px);font-weight:500;opacity:0;transform:translateY(20px);transition:opacity 1.4s,transform 1.4s}
 .interlude.visible .interlude-title{opacity:1;transform:translateY(0)}
 .interlude-title span:last-child{color:var(--gold)}
 .unlock-area{margin-top:90px;opacity:0;transform:translateY(20px);transition:opacity 1s,transform 1s}
@@ -44,7 +45,7 @@ button{font:inherit}
 .video-screen{position:fixed;inset:0;z-index:100;background:rgba(2,3,9,.97);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .5s}
 .video-screen.visible{opacity:1;pointer-events:auto}
 .video-placeholder{width:min(900px,90vw);aspect-ratio:16/9;border:1px solid rgba(216,183,123,.3);display:grid;place-items:center;align-content:center;text-align:center;background:radial-gradient(circle,rgba(45,53,108,.3),transparent 60%)}
-.video-placeholder h2{font-family:'Cormorant Garamond',serif;font-size:34px;margin:12px 0 5px}
+.video-placeholder h2{font-family:'Gnocchi','Cormorant Garamond',serif;font-size:34px;margin:12px 0 5px}
 .video-placeholder p{opacity:.55;font-size:13px}
 .video-icon{width:64px;height:64px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold)}
 .close-video{position:fixed;right:24px;top:18px;border:0;background:transparent;color:#fff;font-size:38px;cursor:pointer;opacity:.7}
