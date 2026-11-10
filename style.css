@@ -21,7 +21,7 @@ button{font:inherit}
 .open-link{border:0;background:transparent;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:11px;cursor:pointer;padding:10px 16px}
 .letter-screen,.second-letter{min-height:170vh;position:relative;display:flex;justify-content:center;opacity:0;pointer-events:none;transition:opacity 1.2s}
 .letter-screen.visible,.second-letter.visible{opacity:1;pointer-events:auto}
-.scene{position:absolute;inset:0;background:linear-gradient(rgba(4,8,25,.3),rgba(4,7,20,.58)),url('assets/scene.jpg') center/cover no-repeat;filter:blur(14px) saturate(.85);transform:scale(1.08);transition:filter 3s}
+.scene{position:absolute;inset:0;background:linear-gradient(rgba(4,8,25,.3),rgba(4,7,20,.58)),url('assets/scene.svg') center/cover no-repeat;filter:blur(14px) saturate(.85);transform:scale(1.08);transition:filter 3s}
 .letter-screen.visible .scene,.second-letter.visible .scene{filter:blur(2px) saturate(.95)}
 .scene-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,6,19,.5),rgba(3,5,14,.25) 40%,rgba(3,5,14,.82))}
 .letter-content{position:relative;z-index:3;width:min(760px,90vw);padding:18vh 0 20vh;text-align:center}
