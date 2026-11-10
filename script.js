@@ -1,3 +1,19 @@
+const snowfall=document.getElementById('snowfall');
+if(snowfall){
+  const flakes=['❄','✦','·','❅'];
+  for(let i=0;i<22;i++){
+    const flake=document.createElement('span');
+    flake.className='snowflake';
+    flake.textContent=flakes[i%flakes.length];
+    flake.style.left=(Math.random()*100)+'%';
+    flake.style.setProperty('--size',(8+Math.random()*13)+'px');
+    flake.style.setProperty('--duration',(10+Math.random()*14)+'s');
+    flake.style.setProperty('--delay',(-Math.random()*20)+'s');
+    flake.style.setProperty('--sway',(2.5+Math.random()*3.5)+'s');
+    flake.style.setProperty('--drift',(-45+Math.random()*90)+'px');
+    snowfall.appendChild(flake);
+  }
+}
 const introText=`Это письмо я не хотел отправлять обычным сообщением.
 
 Потому что есть слова, которым хочется дать немного больше времени.
