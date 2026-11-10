@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#06133c"/><stop offset=".62" stop-color="#0b3f83"/><stop offset="1" stop-color="#06142f"/></linearGradient>
+ <radialGradient id="moon"><stop stop-color="#eaf8ff"/><stop offset=".72" stop-color="#a9dcff"/><stop offset="1" stop-color="#5fa6e8"/></radialGradient>
+ <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#125a9c"/><stop offset="1" stop-color="#03162f"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#sky)"/>
+<circle cx="640" cy="190" r="155" fill="#bfe9ff" opacity=".18" filter="url(#glow)"/>
+<circle cx="640" cy="190" r="128" fill="url(#moon)"/>
+<g fill="#fff" opacity=".85">
+ <circle cx="110" cy="95" r="2"/><circle cx="180" cy="150" r="3"/><circle cx="270" cy="70" r="2"/><circle cx="900" cy="85" r="2"/><circle cx="1010" cy="150" r="3"/><circle cx="1140" cy="90" r="2"/><circle cx="1200" cy="190" r="2"/><circle cx="82" cy="270" r="2"/><circle cx="1080" cy="285" r="2"/>
+</g>
+<path d="M0 365 Q160 290 330 355 T650 345 T980 330 T1280 360 V455 H0Z" fill="#173d79" opacity=".8"/>
+<path d="M0 450 Q180 420 360 450 T720 445 T1080 450 T1280 435 V720 H0Z" fill="url(#water)"/>
+<path d="M430 475 Q640 420 850 470" stroke="#8bd5ff" stroke-width="6" opacity=".4" fill="none"/>
+<path d="M360 510 Q640 465 920 510" stroke="#78c7f5" stroke-width="3" opacity=".28" fill="none"/>
+<g fill="#020814" opacity=".9">
+ <path d="M0 0h130l-25 60-32-35-35 80-38-50zM1280 0h-120l22 60 30-35 35 78 33-50z"/>
+ <path d="M0 470 l80-100 55 85 55-125 75 120 55-70 70 90 v150 H0z"/>
+ <path d="M1280 470 l-80-100-55 85-55-125-75 120-55-70-70 90 v150 h390z"/>
+</g>
+<!-- simplified couple silhouette -->
+<g>
+ <ellipse cx="650" cy="225" rx="34" ry="39" fill="#d38b62"/>
+ <path d="M620 255 Q650 245 684 260 L710 455 H590 Z" fill="#6c2330"/>
+ <path d="M606 280 Q540 330 525 480 H655 L640 290Z" fill="#8f303d"/>
+ <ellipse cx="760" cy="290" rx="29" ry="35" fill="#e7ae91"/>
+ <path d="M735 320 Q760 305 790 325 L860 520 H675 L725 325Z" fill="#f5eee4"/>
+ <path d="M710 330 Q760 300 815 330 L875 475 H655Z" fill="#fff8ed"/>
+ <path d="M672 385 Q715 430 750 450" stroke="#e7ae91" stroke-width="18" fill="none" stroke-linecap="round"/>
+ <path d="M705 400 Q675 430 650 450" stroke="#d38b62" stroke-width="18" fill="none" stroke-linecap="round"/>
+</g>
+</svg>
