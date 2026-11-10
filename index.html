@@ -55,10 +55,11 @@
 
   <section class="video-screen" id="videoScreen" aria-hidden="true">
     <button class="close-video" id="closeVideo" aria-label="Закрыть видео">×</button>
-    <div class="video-placeholder">
-      <div class="video-icon">▶</div>
-      <h2>Здесь появится видео</h2>
-      <p>Файл добавим после утверждения механики.</p>
+    <div class="video-frame">
+      <video id="letterVideo" controls playsinline preload="none">
+        <source src="assets/video.mp4.mp4" type="video/mp4">
+        Ваш браузер не поддерживает воспроизведение видео.
+      </video>
     </div>
   </section>
 </main>
