@@ -15,13 +15,7 @@ if(snowfall){
   }
 }
 const introText=`Я знаю, что ты любишь романтику. Знаю, чего тебе иногда не хватает — тех простых вещей, которые хочется чувствовать, а не просить о них.\n\nВозможно, я для тебя никто, и, наверное, не мне решать, что тебе нужно. Но я всё равно не могу оставаться в стороне.\n\nПотому что иногда, когда человек тебе по-настоящему дорог, хочется хотя бы немного подарить ему то тепло, которого ему не хватает. Просто потому, что тебе важно, чтобы он улыбнулся.\n\nПоэтому просто прочитай его до конца.`;
-const secondText=`Иногда один человек появляется в твоей жизни совершенно неожиданно.
-
-И вдруг привычные вещи начинают звучать иначе.
-
-Это письмо — не попытка что-то изменить.
-
-Это просто то, что мне хотелось однажды сказать тебе.`;
+const secondText=`Иногда один человек появляется в твоей жизни совершенно неожиданно.\n\nИ вдруг привычные вещи начинают звучать иначе.\n\nЭто письмо — не попытка что-то изменить.\n\nЭто просто то, что мне хотелось однажды сказать тебе.`;
 const $=id=>document.getElementById(id);
 const envelope=$('envelope'),wax=$('wax'),openLink=$('openLink'),envelopeScreen=$('envelopeScreen'),letterScreen=$('letterScreen'),letterText=$('letterText'),marker=$('continueMarker'),interlude=$('interlude'),secondLetter=$('secondLetter'),secondTextEl=$('secondText'),unlock=$('unlockArea'),videoButton=$('videoButton'),videoScreen=$('videoScreen'),closeVideo=$('closeVideo');
 let opened=false,secondFinished=false;
